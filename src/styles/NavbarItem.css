@@ -1,0 +1,23 @@
+
+.list-active {
+    border-bottom: 0.6rem solid var(--green-dark);
+    background-color: var(--dark-primary) !important;
+    color: var(--green-light) !important;
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight:700;
+    padding: 2rem;
+    font-size: larger;
+    border-radius: 2.5rem;
+}
+a:visited {
+    color: var(--dark-primary);
+}
+a:hover {
+    background-color: var(--green-light);
+    color: var(--grey) !important;
+    transition: all 0.7s;
+}

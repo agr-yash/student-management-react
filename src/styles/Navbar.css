@@ -1,3 +1,10 @@
+.navbar {
+    background-color: var(--green-light);
+    color: var(--dark-secondary);
+    padding: 6px 0;
+    font-size: 1.3rem;
+}
+
 ul {
     display: flex;
     list-style: none;

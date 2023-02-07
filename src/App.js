@@ -2,11 +2,12 @@ import Navbar from "./components/Navbar";
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ListPage from "./pages/ListPage";
+import "./App.css";
 
 function App() {
   return (
     <Router>
-      <div>
+      <div className="app">
         <Navbar />
         <Switch>
           <Route path="/students">

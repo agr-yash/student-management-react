@@ -26,7 +26,7 @@ const List = ({ listName }) => {
     <>
       <h1>{listName.toUpperCase()}</h1>
       {list.map((element) => (
-        <h2 id={element.id}>{element.name}</h2>
+        <h2 key={element.id}>{element.name}</h2>
       ))}
     </>
   );

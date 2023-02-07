@@ -1,10 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/NavbarItem.css";
+import classnames from "classnames";
 
-const NavbarItem = ({ item }) => {
+const NavbarItem = ({ item, index, setActiveIndex, activeIndex }) => {
   return (
-    <li>
-      <Link to={`/${item}`}>{item}</Link>
+    <li onClick={(e) => setActiveIndex(index)}>
+      <Link
+        to={`/${item}`}
+        className={classnames(index === activeIndex ? "list-active" : "")}
+      >
+        {item}
+      </Link>
     </li>
   );
 };
