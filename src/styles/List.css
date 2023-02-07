@@ -1,0 +1,22 @@
+.table {
+    color: var(--grey);
+}
+.table-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    width: 45vw;
+    padding: 0 4rem;
+    border-radius: 1.5rem;
+} 
+.table-row:nth-child(odd) {
+    color: var(--dark-primary) !important;
+    background-color: var(--green-dark);
+}
+.table-row:hover {
+    font-size: larger;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
